@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="noindex, nofollow" />
+  <title>宇宙謎</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="message">この部屋は１の部屋である。葉の部屋へ行け。<br>
+    失敗条件は２つある。１つは１９回以上移動することだ。
+  </div>
+  <div id="counter">移動回数: 0</div>
+
+  <!-- メイン盤面 -->
+  <div id="grid"></div>
+
+  <div id="controls">
+    <div></div>
+    <button class="btn" id="up">↑</button>
+    <div></div>
+    <button class="btn" id="left">←</button>
+    <div></div>
+    <button class="btn" id="right">→</button>
+    <div></div>
+    <button class="btn" id="down">↓</button>
+    <div></div>
+  </div>
+
+  <!-- 36マス到達時のクイズ -->
+  <div id="quiz" class="overlay hidden">
+    <p id="quiz-text">ここでクイズ！</p>
+    <input type="text" id="quiz-answer" placeholder="解答を入力"/>
+    <button id="quiz-submit" class="btn">回答</button>
+  </div>
+
+  <!-- クリア画面 -->
+  <div id="clear-screen" class="overlay hidden">
+    <p>ゲームクリア！おめでとうございます！ </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+/* style.css */
+body {
+  background: #000;
+  color: #fff;
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#message {
+  padding: 20px;
+  text-align: center;
+}
+#counter {
+  font-size: 18px;
+  margin: 10px;
+}
+#grid {
+  display: none;
+  
+
+}
+.cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #444;
+}
+.current {
+  background-color: #444;
+}
+#controls {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px;
+  gap: 10px;
+  margin-top: 20px;
+}
+.btn {
+  background: #222;
+  color: #fff;
+  border: 1px solid #555;
+  width: 80px;
+  height: 80px;
+  font-size: 32px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* クイズ＆クリア画面 */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #111;
+  padding: 30px;
+  border: 2px solid #fff;
+  text-align: center;
+}
+.overlay p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.overlay input {
+  padding: 8px;
+  font-size: 16px;
+  width: 200px;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+
+/* style.css に追記 */
+#message {
+  white-space: pre-line;
+}
