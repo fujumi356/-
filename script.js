@@ -57,7 +57,7 @@ function resetGame(reason) {
   pos = { r: 0, c: 0 };
   moveCount = 0;
   stock = 1;
-  counterEl.textContent = '移動回数: ' + moveCount;
+  counterEl.textContent = '移動回数: ' + moveCount.toString(9);
   updateGrid();
 }
 
@@ -95,15 +95,15 @@ function move(dr, dc) {
     messageEl.textContent = 'そこには移動できません。';
     return;
   }
-
+  
   pos = { r: nr, c: nc };
   moveCount++;
-  counterEl.textContent = '移動回数: ' + moveCount;
+  counterEl.textContent = '移動回数: ' + moveCount.toString(9);
   messageEl.textContent = '';
-
+  
   // 回数オーバー
   if (moveCount > MAX_MOVES) {
-    resetGame('移動回数が19回を超えました。');
+    resetGame('移動回数が20回を超えました。');
     return;
   }
 
