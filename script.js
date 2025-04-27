@@ -103,7 +103,7 @@ function move(dr, dc) {
   
   // 回数オーバー
   if (moveCount > MAX_MOVES) {
-    resetGame('移動回数が20回を超えました。');
+    resetGame('移動回数が21回を超えました。');
     return;
   }
 
