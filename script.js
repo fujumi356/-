@@ -69,7 +69,7 @@ function showQuiz() {
   quizEl.classList.remove('hidden');
   gridEl.classList.add('hidden');
   document.getElementById('controls').classList.add('hidden');
-  messageEl.textContent = 'クイズに答えてください！';
+  messageEl.textContent = '問題に答えてください';
 }
 
 // クイズ非表示
@@ -124,7 +124,7 @@ function move(dr, dc) {
   }
   // 64マス到達 → クリア
   if (val === 64) {
-    messageEl.textContent = '葉のマスに到達。\nここと１を除くもう一つの一つしかない到達可能な部屋へ行け。\nはじを知ることが重要だ。';
+    messageEl.textContent = '葉の部屋に到達。\nあと一つの到達可能かつ一つしかない部屋へ行け。';
   }
 
   updateGrid();
